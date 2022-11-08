@@ -14344,26 +14344,26 @@ var $author$project$Viewgame$viewplant = F4(
 					case 1:
 						switch (_v10.a) {
 							case 1:
-								return 'assets/Graphics/p1_1.png';
+								return './assets/Graphics/p1_1.png';
 							case 2:
-								return 'assets/Graphics/p2_1.png';
+								return './assets/Graphics/p2_1.png';
 							case 3:
-								return 'assets/Graphics/p3_1.png';
+								return './assets/Graphics/p3_1.png';
 							case 4:
-								return 'assets/Graphics/p1_1.png';
+								return './assets/Graphics/p1_1.png';
 							default:
 								break _v10$8;
 						}
 					case 2:
 						switch (_v10.a) {
 							case 1:
-								return 'assets/Graphics/p1_2.png';
+								return './assets/Graphics/p1_2.png';
 							case 2:
-								return 'assets/Graphics/p2_2.png';
+								return './assets/Graphics/p2_2.png';
 							case 3:
-								return 'assets/Graphics/p3_2.png';
+								return './assets/Graphics/p3_2.png';
 							case 4:
-								return 'assets/Graphics/p1_2.png';
+								return './assets/Graphics/p1_2.png';
 							default:
 								break _v10$8;
 						}
@@ -14371,7 +14371,7 @@ var $author$project$Viewgame$viewplant = F4(
 						break _v10$8;
 				}
 			}
-			return 'assets/Graphics/p1_1.png';
+			return './assets/Graphics/p1_1.png';
 		}();
 		var _v3 = function () {
 			var _v4 = $elm$core$List$head(
@@ -15819,7 +15819,7 @@ var $author$project$Viewgame$view_ghosts = function (model) {
 						$elm$core$Debug$toString((((y - 1) * 0.06) * window_x) + (0.14 * window_x))),
 						$elm$svg$Svg$Attributes$y(
 						$elm$core$Debug$toString(((((x - 1) * 0.1) * window_y) - ((uppos * window_y) / 10)) + ((maptimer * 0.1) * window_y))),
-						$elm$svg$Svg$Attributes$xlinkHref('assets/Graphics/ghost.png'),
+						$elm$svg$Svg$Attributes$xlinkHref('./assets/Graphics/ghost.png'),
 						$elm$svg$Svg$Attributes$opacity(
 						$author$project$Viewgame$opa(n))
 					]),
@@ -15997,7 +15997,7 @@ var $author$project$View_finite_level$view_finite_level = function (model) {
 						_List_fromArray(
 							[
 								$elm$html$Html$Attributes$controls(true),
-								$elm$html$Html$Attributes$src('assets/Sound/place_instrument.ogg'),
+								$elm$html$Html$Attributes$src('./assets/Sound/place_instrument.ogg'),
 								$elm$html$Html$Attributes$id('place_instrument'),
 								$elm$html$Html$Attributes$autoplay(false)
 							]),
@@ -16007,7 +16007,7 @@ var $author$project$View_finite_level$view_finite_level = function (model) {
 						_List_fromArray(
 							[
 								$elm$html$Html$Attributes$controls(true),
-								$elm$html$Html$Attributes$src('assets/Sound/light_on_plant.ogg'),
+								$elm$html$Html$Attributes$src('./assets/Sound/light_on_plant.ogg'),
 								$elm$html$Html$Attributes$id('light_plant'),
 								$elm$html$Html$Attributes$autoplay(false)
 							]),
@@ -16416,7 +16416,7 @@ var $author$project$Viewmenu$view_menu = function (model) {
 												$elm$svg$Svg$Attributes$height('45%'),
 												$elm$svg$Svg$Attributes$x('11%'),
 												$elm$svg$Svg$Attributes$y('8%'),
-												$elm$svg$Svg$Attributes$xlinkHref('assets/Graphics/gametitle.png')
+												$elm$svg$Svg$Attributes$xlinkHref('./assets/Graphics/gametitle.png')
 											]),
 										_List_Nil)
 									]))
@@ -16526,7 +16526,7 @@ var $author$project$Viewgame$view_playing = function (model) {
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$controls(true),
-							$elm$html$Html$Attributes$src('assets/Sound/gaming_soundtrack.ogg'),
+							$elm$html$Html$Attributes$src('./assets/Sound/gaming_soundtrack.ogg'),
 							$elm$html$Html$Attributes$id('audio-sample'),
 							$elm$html$Html$Attributes$autoplay(true),
 							$elm$html$Html$Attributes$loop(true)
@@ -16537,7 +16537,7 @@ var $author$project$Viewgame$view_playing = function (model) {
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$controls(true),
-							$elm$html$Html$Attributes$src('assets/Sound/place_instrument.ogg'),
+							$elm$html$Html$Attributes$src('./assets/Sound/place_instrument.ogg'),
 							$elm$html$Html$Attributes$id('place_instrument'),
 							$elm$html$Html$Attributes$autoplay(false)
 						]),
@@ -16547,7 +16547,7 @@ var $author$project$Viewgame$view_playing = function (model) {
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$controls(true),
-							$elm$html$Html$Attributes$src('assets/Sound/light_on_plant.ogg'),
+							$elm$html$Html$Attributes$src('./assets/Sound/light_on_plant.ogg'),
 							$elm$html$Html$Attributes$id('light_plant'),
 							$elm$html$Html$Attributes$autoplay(false)
 						]),

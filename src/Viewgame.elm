@@ -87,7 +87,7 @@ view_playing model =
                     []
                , audio
                     [ HtmlAttr.controls True
-                    , HtmlAttr.src "assets/Sound/gaming_soundtrack.ogg"
+                    , HtmlAttr.src "./assets/Sound/gaming_soundtrack.ogg"
                     , HtmlAttr.id "audio-sample"
                     , HtmlAttr.autoplay True
                     , HtmlAttr.loop True
@@ -95,14 +95,14 @@ view_playing model =
                     []
                , audio
                     [ HtmlAttr.controls True
-                    , HtmlAttr.src "assets/Sound/place_instrument.ogg"
+                    , HtmlAttr.src "./assets/Sound/place_instrument.ogg"
                     , HtmlAttr.id "place_instrument"
                     , HtmlAttr.autoplay False
                     ]
                     []
                , audio
                     [ HtmlAttr.controls True
-                    , HtmlAttr.src "assets/Sound/light_on_plant.ogg"
+                    , HtmlAttr.src "./assets/Sound/light_on_plant.ogg"
                     , HtmlAttr.id "light_plant"
                     , HtmlAttr.autoplay False
                     ]
@@ -231,7 +231,7 @@ view_ghosts model =
                 , SvgAttr.x (toString (toFloat (y - 1) * 0.06 * window_x + 0.14 * window_x))
                 , SvgAttr.y
                     (toString (toFloat (x - 1) * 0.1 * window_y - uppos * window_y / 10 + toFloat maptimer * 0.1 * window_y))
-                , SvgAttr.xlinkHref "assets/Graphics/ghost.png"
+                , SvgAttr.xlinkHref "./assets/Graphics/ghost.png"
                 , SvgAttr.opacity (opa n)
                 ]
                 []
@@ -654,32 +654,32 @@ viewplant ( window_x, window_y ) uppos object ( ( a, b ), c ) =
         link =
             case ( a, b ) of
                 ( 1, 1 ) ->
-                    "assets/Graphics/p1_1.png"
+                    "./assets/Graphics/p1_1.png"
 
                 ( 1, 2 ) ->
-                    "assets/Graphics/p1_2.png"
+                    "./assets/Graphics/p1_2.png"
 
                 ( 2, 1 ) ->
-                    "assets/Graphics/p2_1.png"
+                    "./assets/Graphics/p2_1.png"
 
                 ( 2, 2 ) ->
-                    "assets/Graphics/p2_2.png"
+                    "./assets/Graphics/p2_2.png"
 
                 ( 3, 1 ) ->
-                    "assets/Graphics/p3_1.png"
+                    "./assets/Graphics/p3_1.png"
 
                 --bad plant switching
                 ( 3, 2 ) ->
-                    "assets/Graphics/p3_2.png"
+                    "./assets/Graphics/p3_2.png"
 
                 ( 4, 1 ) ->
-                    "assets/Graphics/p1_1.png"
+                    "./assets/Graphics/p1_1.png"
 
                 ( 4, 2 ) ->
-                    "assets/Graphics/p1_2.png"
+                    "./assets/Graphics/p1_2.png"
 
                 ( _, _ ) ->
-                    "assets/Graphics/p1_1.png"
+                    "./assets/Graphics/p1_1.png"
     in
     [ Svg.image
         [ SvgAttr.width (toString length)

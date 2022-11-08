@@ -64,14 +64,14 @@ view_finite_level model =
                     []
                , audio
                     [ HtmlAttr.controls True
-                    , HtmlAttr.src "assets/Sound/place_instrument.ogg"
+                    , HtmlAttr.src "./assets/Sound/place_instrument.ogg"
                     , HtmlAttr.id "place_instrument"
                     , HtmlAttr.autoplay False
                     ]
                     []
                , audio
                     [ HtmlAttr.controls True
-                    , HtmlAttr.src "assets/Sound/light_on_plant.ogg"
+                    , HtmlAttr.src "./assets/Sound/light_on_plant.ogg"
                     , HtmlAttr.id "light_plant"
                     , HtmlAttr.autoplay False
                     ]

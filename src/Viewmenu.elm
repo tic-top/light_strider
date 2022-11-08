@@ -100,7 +100,7 @@ view_menu model =
                             , SvgAttr.height "45%"
                             , SvgAttr.x "11%"
                             , SvgAttr.y "8%"
-                            , SvgAttr.xlinkHref "assets/Graphics/gametitle.png"
+                            , SvgAttr.xlinkHref "./assets/Graphics/gametitle.png"
                             ]
                             []
                         ]
