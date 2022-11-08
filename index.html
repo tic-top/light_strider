@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--     <link rel="stylesheet" type="text/css" href="main.css"> -->
+    <script src="build/main.js"></script>
+    <!--     <link rel="icon" href="favicon.ico"> -->
+    <!--     <title>Your Title</title> -->
+</head>
+
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script>
+        // Elm app
+        var app = Elm.Main.init({
+            node: document.getElementById('root'),
+            flags: Date.now()
+        });
+        // Edit the volume of the music
+        app.ports.changeVolume.subscribe(
+            (x) => {
+                try {
+                    let id = x[0];
+                    let vol = x[1];
+                    console.log("Change_Volume: ", id, vol);
+                    if (!(vol === null)) {
+                        let ele = document.getElementById(id);
+                        ele.volume = vol;
+                    }
+                } catch (error) {}
+            }
+        )
+        //Pause the music
+        app.ports.pause.subscribe(
+            id => {
+                try {
+                    console.log("Pause: ", id);
+                    ele = document.getElementById(id);
+                    ele.pause();
+                } catch (error) {
+
+                }
+            }
+        )
+        //Set the time of the music
+        app.ports.settime.subscribe(
+            (x) => {
+                try {
+                    let id = x[0];
+                    let time = x[1];
+                    console.log("Set_Play_Time: ", id, time);
+                    if (!(time === null)) {
+                        let ele = document.getElementById(id);
+                        ele.currentTime = time;
+                    }
+                } catch (error) {}
+            }
+        )
+        //Start the music
+        app.ports.start.subscribe(
+            id => {
+                try {
+                    console.log("Start_Music: ", id);
+                    let ele = document.getElementById(id);
+                    ele.play();
+                } catch (error) {}
+            }
+        )
+        //Set the rate of the music
+        app.ports.setrate.subscribe(
+            (x) => {
+                try {
+                    let id = x[0];
+                    let speed = x[1];
+                    let ele = document.getElementById(id);
+                    console.log("Set_Music_Rate: ", id, speed);
+                    ele.defaultPlaybackRate = speed;
+                    ele.load();
+                } catch (error) {}
+            }
+        )
+    </script>
+</body>
+
+</html>
